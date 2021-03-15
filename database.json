@@ -1,0 +1,14 @@
+{
+    "foods": [
+        {
+            "id": 1,
+            "userId": 1,
+            "name": "caesar salad",
+            "image": "picture of caesar salad",
+            "description": "romaine lettuce with coutons, tomatoes, parmesan cheese and caesar dressing.",
+            "rating": 5,
+            "mealType": "lunch",
+            "timestamp": "03/15/2021"
+        }
+    ]
+}
