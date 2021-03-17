@@ -1,14 +1,103 @@
 {
+    "users": [
+        {
+            "id": 1,
+            "firstName": "Yasmeen",
+            "lastName": "Cole",
+            "email": "yasmeencole1@gmail.com",
+            "password": "Cole12345"
+        },
+        {
+            "id": 2,
+            "firstName": "User2",
+            "lastName": "Test",
+            "email": "test@gmail.com",
+            "password": "Test12345"
+        },
+        {
+            "id": 3,
+            "firstName": "Betty",
+            "lastName": "Dumas",
+            "email": "bjdw@gmail.com",
+            "password": "Betty12345"
+        }
+    ],
     "foods": [
         {
             "id": 1,
             "userId": 1,
-            "name": "caesar salad",
-            "image": "picture of caesar salad",
-            "description": "romaine lettuce with coutons, tomatoes, parmesan cheese and caesar dressing.",
-            "rating": 5,
+            "name": "Caesar Salad",
+            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fnatashaskitchen.com%2Fcaesar-salad-recipe%2F&psig=AOvVaw1GNt25j0P9zacwMFKJIRHe&ust=1616080876303000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIjcgcjQt-8CFQAAAAAdAAAAABAD",
+            "description": "Romaine lettuce with coutons, tomatoes, parmesan cheese and caesar dressing.",
             "mealType": "lunch",
             "timestamp": "03/15/2021"
+        },
+        {
+            "id": 2,
+            "userId": 1,
+            "name": "Porkchop and Spinach",
+            "image": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Sauteed-Pork-Chops-with-Garlic-Spinach_EXPS_THAM17_143734_B11_08_3b.jpg",
+            "description": "Pan seared porkchop and sauted spinach.",
+            "mealType": "dinner",
+            "timestamp": "03/16/2021"
+        },
+        {
+            "id": 3,
+            "userId": 2,
+            "name": "Sour Cream and Onion Potato Chips",
+            "image": "hhttps://images-na.ssl-images-amazon.com/images/I/81x%2BfLvChGL._SL1500_.jpg",
+            "description": "Sour cream and onion lays potato chips.",
+            "mealType": "snack",
+            "timestamp": "03/17/2021"
+        }
+    ],
+    "poops": [
+        {
+            "id": 1,
+            "userId": 1,
+            "type": 4,
+            "note ": "none painful, slightly gassy prior to bowel movement",
+            "date": "03/15/2021"
+        },
+        {
+            "id": 2,
+            "userId": 1,
+            "type": 6,
+            "note": "None painful, soft poop, quickly passed",
+            "date": "03/16/2021"
+        },
+        {
+            "id": 3,
+            "userId": 2,
+            "type": 4,
+            "note": "",
+            "date": "03/17/2021"
+        }
+    ],
+    "reviews": [
+        {
+            "id": 1,
+            "userId": 1,
+            "foodId": 1,
+            "rating": 5,
+            "text": "The salad was good and fullfilling. It did not trigger any bad reactions.",
+            "timestamp": "03/15/2021"
+        },
+        {
+            "id": 2,
+            "userId": 1,
+            "foodId": 2,
+            "rating": 5,
+            "text": "The porkchop was well. The following poops (3) were mostly solid and no pain.",
+            "timestamp": "03/16/2021"
+        },
+        {
+            "id": 3,
+            "userId": 2,
+            "foodId": 3,
+            "rating": 3,
+            "text": "I had about 3 small hand fulls of chips to curve my appetite. They taste okay not very filling.",
+            "timestamp": "03/17/2021"
         }
     ]
 }
