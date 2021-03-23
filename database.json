@@ -4,22 +4,19 @@
       "id": 1,
       "firstName": "Yasmeen",
       "lastName": "Cole",
-      "email": "yasmeencole1@gmail.com",
-      "password": "Cole12345"
+      "email": "yasmeencole1@gmail.com"
     },
     {
       "id": 2,
       "firstName": "User2",
       "lastName": "Test",
-      "email": "test@gmail.com",
-      "password": "Test12345"
+      "email": "test@gmail.com"
     },
     {
       "id": 3,
       "firstName": "Betty",
       "lastName": "Dumas",
-      "email": "bjdw@gmail.com",
-      "password": "Betty12345"
+      "email": "bjdw@gmail.com"
     }
   ],
   "foods": [
@@ -39,9 +36,9 @@
       "name": "Porkchop and Spinach",
       "url": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Sauteed-Pork-Chops-with-Garlic-Spinach_EXPS_THAM17_143734_B11_08_3b.jpg",
       "description": "Pan seared porkchop and sauted spinach.",
-      "mealTypeId": 2,
+      "mealTypeId": 3,
       "isGood": true,
-      "timestamp": "03/16/2021, 12:17 PM"
+      "timestamp": "3/23/2021, 01:59 PM"
     },
     {
       "id": 3,
@@ -59,29 +56,39 @@
       "name": "Hot Wings",
       "url": "https://www.courtneyssweets.com/wp-content/uploads/2018/02/baked-hot-wings-10.jpg",
       "description": "Traditional buffalo chicken wings",
-      "mealTypeId": 4,
+      "mealTypeId": 3,
       "isGood": true,
-      "timestamp": "3/18/2021, 12:17 PM"
+      "timestamp": "3/23/2021, 01:59 PM"
     },
     {
       "id": 5,
-      "userId": "",
-      "name": "test1",
+      "userId": 1,
+      "name": "Salad",
       "url": "https://cdn.loveandlemons.com/wp-content/uploads/2019/09/dinner.jpg",
-      "description": "test1",
-      "mealTypeId": "3",
+      "description": "House salad",
+      "mealTypeId": 2,
       "isGood": true,
-      "timestamp": "3/18/2021, 03:39 PM"
+      "timestamp": "3/23/2021, 01:59 PM"
     },
     {
       "id": 6,
-      "userId": "",
+      "userId": 1,
       "name": "Pancakes",
       "url": "https://media.eggs.ca/assets/RecipePhotos/_resampled/FillWyIxMjgwIiwiNzIwIl0/Fluffy-Pancakes-New-CMS.jpg",
       "description": "pancakes and blueberries",
       "mealTypeId": 1,
       "isGood": true,
-      "timestamp": "3/18/2021, 03:42 PM"
+      "timestamp": "3/23/2021, 01:58 PM"
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "name": "Nutty Buddy",
+      "url": "https://images-na.ssl-images-amazon.com/images/I/91N3HpGXNWL._SL1500_.jpg",
+      "description": "Crunchy wafers layered with peanut butter creme and covered in fudge",
+      "mealTypeId": 4,
+      "isGood": true,
+      "timestamp": "3/23/2021, 01:58 PM"
     }
   ],
   "meals": [
@@ -106,20 +113,56 @@
     {
       "id": 1,
       "userId": 1,
-      "note ": "none painful, slightly gassy prior to bowel movement",
-      "date": "03/15/2021"
+      "note": "testing",
+      "timestamp": "3/22/2021, 04:26 PM"
     },
     {
       "id": 2,
       "userId": 1,
       "note": "None painful, soft poop, quickly passed",
-      "date": "03/16/2021"
+      "timestamp": "3/22/2021, 05:26 PM"
     },
     {
       "id": 3,
       "userId": 1,
       "note": "None painful, soft poop",
-      "date": "03/17/2021"
+      "timestamp": "3/22/2021, 04:40 PM"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "note": "test3",
+      "timestamp": "3/22/2021, 04:38 PM"
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "note": "test4",
+      "timestamp": "3/22/2021, 04:39 PM"
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "note": "test5",
+      "timestamp": "3/22/2021, 04:43 PM"
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "note": "test6",
+      "timestamp": "3/22/2021, 04:47 PM"
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "note": "None painful gentle poop",
+      "timestamp": "3/23/2021, 10:56 AM"
+    },
+    {
+      "id": 9,
+      "userId": 1,
+      "note": "poppy poop",
+      "timestamp": "3/23/2021, 02:06 PM"
     }
   ],
   "reviews": [
@@ -129,7 +172,7 @@
       "foodId": 1,
       "rating": 5,
       "text": "The salad was good and fullfilling. It did not trigger any bad reactions.",
-      "timestamp": "03/15/2021"
+      "timestamp": "03/15/2021, 07:20 PM"
     },
     {
       "id": 2,
@@ -137,7 +180,7 @@
       "foodId": 2,
       "rating": 5,
       "text": "The porkchop was well. The following poops (3) were mostly solid and no pain.",
-      "timestamp": "03/16/2021"
+      "timestamp": "03/16/2021, 07:20 PM"
     },
     {
       "id": 3,
@@ -145,7 +188,47 @@
       "foodId": 3,
       "rating": 3,
       "text": "I had about 3 small hand fulls of chips to curve my appetite. They taste okay not very filling.",
-      "timestamp": "03/17/2021"
+      "timestamp": "3/22/2021, 07:20 PM"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "foodId": 6,
+      "rating": 4,
+      "text": "test2",
+      "timestamp": "3/22/2021, 05:30 PM"
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "foodId": 3,
+      "rating": 5,
+      "text": "test3",
+      "timestamp": "3/22/2021, 07:43 PM"
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "foodId": 7,
+      "rating": 2,
+      "text": "The nutty buddy taste good but it made my stomach hurt badly. ",
+      "timestamp": "3/23/2021, 02:04 PM"
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "foodId": 4,
+      "rating": 4,
+      "text": "hotwings",
+      "timestamp": "3/23/2021, 01:43 PM"
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "foodId": 5,
+      "rating": 5,
+      "text": "Salad was good",
+      "timestamp": "3/23/2021, 02:05 PM"
     }
   ]
 }
