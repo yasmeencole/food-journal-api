@@ -2,24 +2,28 @@
   "users": [
     {
       "id": 1,
-      "firstName": "Yasmeen",
-      "lastName": "Cole",
-      "email": "yasmeencole1@gmail.com",
-      "password": "Cole12345"
+      "name": "Yasmeen",
+      "email": "yasmeencole1@gmail.com"
     },
     {
       "id": 2,
-      "firstName": "User2",
-      "lastName": "Test",
-      "email": "test@gmail.com",
-      "password": "Test12345"
+      "name": "User2",
+      "email": "test@gmail.com"
     },
     {
       "id": 3,
-      "firstName": "Betty",
-      "lastName": "Dumas",
-      "email": "bjdw@gmail.com",
-      "password": "Betty12345"
+      "name": "Betty",
+      "email": "bjdw@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Karen",
+      "email": "klove@gmail.com"
+    },
+    {
+      "email": "jd@gmail.com",
+      "name": "Jisie ",
+      "id": 5
     }
   ],
   "foods": [
@@ -38,19 +42,19 @@
       "userId": 1,
       "name": "Porkchop and Spinach",
       "url": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Sauteed-Pork-Chops-with-Garlic-Spinach_EXPS_THAM17_143734_B11_08_3b.jpg",
-      "description": "Pan seared porkchop and sauted spinach.",
-      "mealTypeId": 2,
+      "description": "Pan seared pork chop and sautéed spinach",
+      "mealTypeId": 3,
       "isGood": true,
-      "timestamp": "03/16/2021, 12:17 PM"
+      "timestamp": "4/6/2021, 08:28 AM"
     },
     {
       "id": 3,
-      "userId": 1,
+      "userId": 4,
       "name": "Sour Cream and Onion Potato Chips",
       "url": "https://images-na.ssl-images-amazon.com/images/I/81x%2BfLvChGL._SL1500_.jpg",
       "description": "Sour cream and onion lays potato chips.",
       "mealTypeId": 4,
-      "isGood": true,
+      "isGood": false,
       "timestamp": "03/17/2021, 12:17 PM"
     },
     {
@@ -59,29 +63,169 @@
       "name": "Hot Wings",
       "url": "https://www.courtneyssweets.com/wp-content/uploads/2018/02/baked-hot-wings-10.jpg",
       "description": "Traditional buffalo chicken wings",
-      "mealTypeId": 4,
+      "mealTypeId": 3,
       "isGood": true,
-      "timestamp": "3/18/2021, 12:17 PM"
-    },
-    {
-      "id": 5,
-      "userId": "",
-      "name": "test1",
-      "url": "https://cdn.loveandlemons.com/wp-content/uploads/2019/09/dinner.jpg",
-      "description": "test1",
-      "mealTypeId": "3",
-      "isGood": true,
-      "timestamp": "3/18/2021, 03:39 PM"
+      "timestamp": "3/23/2021, 01:59 PM"
     },
     {
       "id": 6,
-      "userId": "",
-      "name": "Pancakes",
+      "userId": 1,
+      "name": "Blueberry Pancakes",
       "url": "https://media.eggs.ca/assets/RecipePhotos/_resampled/FillWyIxMjgwIiwiNzIwIl0/Fluffy-Pancakes-New-CMS.jpg",
-      "description": "pancakes and blueberries",
+      "description": "pancakes with strawberries and blueberries",
       "mealTypeId": 1,
       "isGood": true,
-      "timestamp": "3/18/2021, 03:42 PM"
+      "timestamp": "4/5/2021, 03:05 PM"
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "name": "Nutty Buddy",
+      "url": "https://images-na.ssl-images-amazon.com/images/I/91N3HpGXNWL._SL1500_.jpg",
+      "description": "Crunchy wafers layered with peanut butter creme and covered in fudge.",
+      "mealTypeId": 4,
+      "isGood": false,
+      "timestamp": "4/6/2021, 08:28 AM"
+    },
+    {
+      "id": 8,
+      "userId": 4,
+      "name": "Meat Loaf",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCd_6ojqJfDtCTykiAMuPX2VrtoMt8iJy99w&usqp=CAU",
+      "description": "Meat loaf with mashed potatoes and aspargus",
+      "mealTypeId": 1,
+      "isGood": true,
+      "timestamp": "3/23/2021, 03:06 PM"
+    },
+    {
+      "id": 9,
+      "userId": 4,
+      "name": "Hamburger",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjZDii5iRPbIGBZMTGDTOe-rlPn19D7ibuhw&usqp=CAU",
+      "description": "Hamburger with cheese, lettuce, tomato, red onion and french fries",
+      "mealTypeId": 3,
+      "isGood": false,
+      "timestamp": "3/23/2021, 03:57 PM"
+    },
+    {
+      "id": 10,
+      "userId": 1,
+      "name": "Pepperoni Pizza",
+      "url": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/08/26/06/istock-1164195937.jpg?width=982&height=726&auto=webp&quality=75",
+      "description": "Pepperoni pizza with mozzarella cheese",
+      "mealTypeId": 3,
+      "isGood": false,
+      "timestamp": "4/6/2021, 07:10 AM"
+    },
+    {
+      "id": 11,
+      "userId": 1,
+      "name": "Fried Chicken",
+      "url": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Crispy-Fried-Chicken_EXPS_FRBZ19_6445_C01_31_3b.jpg",
+      "description": "Chicken deep fried in vegetable oil",
+      "mealTypeId": 3,
+      "isGood": true,
+      "timestamp": "4/6/2021, 08:28 AM"
+    },
+    {
+      "id": 12,
+      "userId": 2,
+      "name": "Sausage, eggs and toast",
+      "url": "data:image/jpeg;base64,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",
+      "description": "Sausage, scrambled eggs and toast",
+      "mealTypeId": 1,
+      "isGood": true,
+      "timestamp": "3/25/2021, 02:22 PM"
+    },
+    {
+      "id": 13,
+      "userId": 1,
+      "name": "Laffy Taffy",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYb7iFwMpbFjR9B4nNjru_gHJyflN0w2rfz2PDx1lStw0tiz5IJQLKPJ6W9sc4Esxhcs3T2HMa&usqp=CAc",
+      "description": "Taffy multi flavored candy",
+      "mealTypeId": 4,
+      "isGood": false,
+      "timestamp": "4/5/2021, 07:52 AM"
+    },
+    {
+      "id": 14,
+      "userId": 2,
+      "name": "Cheetos Puff ",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW0NnvlioWAORcRp4TjZwdGCZYzZMEzepLeHFqM3JTlKQlATKUcL5xlEBxFzk&usqp=CAc",
+      "description": "cheese puffy corn chips",
+      "mealTypeId": 4,
+      "isGood": false,
+      "timestamp": "3/25/2021, 11:39 AM"
+    },
+    {
+      "id": 15,
+      "userId": 3,
+      "name": "Fruit snacks",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdyNKJAmLEsj3Oww4CCb3pXiqOkCMiqptl4w&usqp=CAU",
+      "description": "muilt-flavored gummy fruit snacks",
+      "mealTypeId": 4,
+      "isGood": true,
+      "timestamp": "3/25/2021, 11:43 AM"
+    },
+    {
+      "id": 16,
+      "userId": 3,
+      "name": "Beef Stroganoff",
+      "url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Slow-Cooker-Beef-Stroganoff_EXPS_SCMBZ18_49369_C01_03_2b.jpg",
+      "description": "beef and noodles with cream sauce",
+      "mealTypeId": 3,
+      "isGood": true,
+      "timestamp": "3/25/2021, 02:08 PM"
+    },
+    {
+      "id": 17,
+      "userId": 3,
+      "name": "Donuts",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnBPCaHTmwruqFF3cP3qEu1kCJqIi8GuBBFw&usqp=CAU",
+      "description": "Glazed donuts",
+      "mealTypeId": 4,
+      "isGood": false,
+      "timestamp": "3/25/2021, 12:46 PM"
+    },
+    {
+      "id": 19,
+      "userId": 1,
+      "name": "Cookies and Cream Ice Cream",
+      "url": "data:image/jpeg;base64,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",
+      "description": "Vanilla cream with Oreo cookies pieces",
+      "mealTypeId": 1,
+      "isGood": false,
+      "timestamp": "4/6/2021, 10:23 AM"
+    },
+    {
+      "id": 20,
+      "userId": 1,
+      "name": "Rice Krispies Treats",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDcU2iBI_dbjzJpW4gTGHPZJFYVyVZ_H2uDV-2gc16PWkJ-uSVmD0IUPajGN5rDvaNf0STY0&usqp=CAc",
+      "description": "Puffy rice cereals covered in marshmallow",
+      "mealTypeId": 4,
+      "isGood": true,
+      "timestamp": "4/6/2021, 07:54 AM"
+    },
+    {
+      "id": 21,
+      "userId": 1,
+      "name": "Baked Chicken Thighs",
+      "url": "https://thestayathomechef.com/wp-content/uploads/2020/01/Crispy-Oven-Baked-Chicken-Thighs-4.jpg",
+      "description": "Oven baked chicken thighs",
+      "mealTypeId": 3,
+      "isGood": true,
+      "timestamp": "4/6/2021, 07:54 AM"
+    },
+    {
+      "id": 22,
+      "userId": 1,
+      "name": "Eggs and Toast",
+      "url": "https://www.iheartnaptime.net/wp-content/uploads/2019/09/Scrambled-eggs.jpg",
+      "description": "Eggs were scrambled with cheese and toast and jelly",
+      "mealTypeId": 1,
+      "isGood": true,
+      "timestamp": "4/6/2021, 10:23 AM"
     }
   ],
   "meals": [
@@ -105,21 +249,81 @@
   "poops": [
     {
       "id": 1,
-      "userId": 1,
-      "note ": "none painful, slightly gassy prior to bowel movement",
-      "date": "03/15/2021"
+      "userId": 4,
+      "note": "Hard poop",
+      "timestamp": "3/22/2021, 04:26 PM"
     },
     {
       "id": 2,
-      "userId": 1,
+      "userId": 3,
       "note": "None painful, soft poop, quickly passed",
-      "date": "03/16/2021"
+      "timestamp": "3/22/2021, 05:26 PM"
     },
     {
       "id": 3,
-      "userId": 1,
+      "userId": 2,
       "note": "None painful, soft poop",
-      "date": "03/17/2021"
+      "timestamp": "3/22/2021, 04:40 PM"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "note": "This morning my poop was mostly sausage-shaped, but lumpy.",
+      "timestamp": "4/6/2021, 07:59 AM"
+    },
+    {
+      "id": 5,
+      "userId": 4,
+      "note": "small poop",
+      "timestamp": "3/25/2021, 01:00 PM"
+    },
+    {
+      "id": 6,
+      "userId": 3,
+      "note": "large poop",
+      "timestamp": "3/22/2021, 04:43 PM"
+    },
+    {
+      "id": 7,
+      "userId": 2,
+      "note": "round poop",
+      "timestamp": "3/22/2021, 04:47 PM"
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "note": "Non painful gentle poop",
+      "timestamp": "3/26/2021, 10:59 AM"
+    },
+    {
+      "id": 9,
+      "userId": 1,
+      "note": "Soft brown blobs with clear cut edges",
+      "timestamp": "4/6/2021, 07:58 AM"
+    },
+    {
+      "id": 10,
+      "userId": 4,
+      "note": "Ate pepperoni pizza, poop was quite painful.",
+      "timestamp": "3/24/2021, 04:01 PM"
+    },
+    {
+      "id": 11,
+      "userId": 3,
+      "note": "Did not poop today",
+      "timestamp": "3/24/2021, 04:05 PM"
+    },
+    {
+      "id": 12,
+      "userId": 1,
+      "note": "Nutty buddy really made constipated.",
+      "timestamp": "3/25/2021, 03:51 PM"
+    },
+    {
+      "id": 13,
+      "userId": 1,
+      "note": "made stomach is hurting and gas",
+      "timestamp": "3/26/2021, 10:10 AM"
     }
   ],
   "reviews": [
@@ -128,24 +332,80 @@
       "userId": 1,
       "foodId": 1,
       "rating": 5,
-      "text": "The salad was good and fullfilling. It did not trigger any bad reactions.",
-      "timestamp": "03/15/2021"
+      "text": "The salad was good and fulfilling. It did not trigger any bad reactions.",
+      "timestamp": "4/6/2021, 08:20 AM"
     },
     {
       "id": 2,
       "userId": 1,
       "foodId": 2,
       "rating": 5,
-      "text": "The porkchop was well. The following poops (3) were mostly solid and no pain.",
-      "timestamp": "03/16/2021"
+      "text": "The pork chop was well. The following poops (3) were mostly solid and no pain.",
+      "timestamp": "4/6/2021, 08:20 AM"
     },
     {
       "id": 3,
-      "userId": 1,
+      "userId": 4,
       "foodId": 3,
       "rating": 3,
       "text": "I had about 3 small hand fulls of chips to curve my appetite. They taste okay not very filling.",
-      "timestamp": "03/17/2021"
+      "timestamp": "3/22/2021, 07:20 PM"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "foodId": 6,
+      "rating": 3,
+      "text": "I loved the pancakes they were really delicious",
+      "timestamp": "4/6/2021, 08:00 AM"
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "foodId": 21,
+      "rating": 5,
+      "text": "The baked chicken tasted very well. ",
+      "timestamp": "4/6/2021, 07:53 AM"
+    },
+    {
+      "id": 9,
+      "userId": 4,
+      "foodId": 9,
+      "rating": 4,
+      "text": "Cheese burger on a wheat bun",
+      "timestamp": "3/23/2021, 04:09 PM"
+    },
+    {
+      "id": 11,
+      "userId": 1,
+      "foodId": 4,
+      "rating": 3,
+      "text": "The hot wings taste amazing. ",
+      "timestamp": "4/6/2021, 08:01 AM"
+    },
+    {
+      "id": 12,
+      "userId": 1,
+      "foodId": 19,
+      "rating": 2,
+      "text": "The ice cream did not taste very well, totally not worth the pain.",
+      "timestamp": "4/6/2021, 08:24 AM"
+    },
+    {
+      "id": 13,
+      "userId": 1,
+      "foodId": 10,
+      "rating": 2,
+      "text": "The pizza was tasty, I had bad acid reflux after eating. I probably should avoid pizza in the future.",
+      "timestamp": "4/6/2021, 08:21 AM"
+    },
+    {
+      "id": 14,
+      "userId": 1,
+      "foodId": 20,
+      "rating": 5,
+      "text": "The rice krispies treat taste good. These are a great snack and no stomach pains. ",
+      "timestamp": "4/6/2021, 08:21 AM"
     }
   ]
 }
