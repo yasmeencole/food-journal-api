@@ -1,10 +1,12 @@
 # Food-Journal-API
 
-<img width="1440" alt="myfoodjobimg" src="https://user-images.githubusercontent.com/72658735/127567656-2444f633-f3d1-4052-bdd8-75790a5fd537.png">
-
 This API has been created for **My Food Journal**
 
 Nashville Software School Cohort 46 Capstone - My Food Journal **By Yasmeen Cole**
+
+
+<img width="1440" alt="myfoodjobimg" src="https://user-images.githubusercontent.com/72658735/127567656-2444f633-f3d1-4052-bdd8-75790a5fd537.png">
+
 
 ## My Food Journal
 Link to My Food Journal application:
